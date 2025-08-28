@@ -23,8 +23,8 @@ export default function MealDetailsPage() {
   if (!meal) return <p className="text-muted">Loading meal details...</p>;
 
   return (
-    <div className="card mt-4">
-      <img src={meal.strMealThumb} alt={meal.strMeal} className="card-img-top " />
+    <div className="card mt-4 align-items-center">
+      <img src={meal.strMealThumb} alt={meal.strMeal} className="card-img-top w-25 shadow-sm border border-dark rounded-3  m-4" />
       <div className="card-body">
         <h3 className="card-title">{meal.strMeal}</h3>
         <p><strong>Category:</strong> {meal.strCategory}</p>
